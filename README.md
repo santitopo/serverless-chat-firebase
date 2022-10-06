@@ -30,12 +30,13 @@ Una vez en la raiz, se deben ejecutar los siguientes comandos para correr la apl
 
 ## Ejecución de pruebas
 
-En la raíz del proyecto ejecutar `firebase emulators:start`
-En otra consola, en la raíz del proyecto ejecutar:
-
 1. `cd tests`
-2. `npm ci`
-3. `npm test`
+2. `firebase emulators:start`
+
+En otra consola, en la carpeta tests:
+
+1. `npm ci`
+2. `npm test`
 
 ## Link publico
 https://chat-serverless-89e6b.web.app

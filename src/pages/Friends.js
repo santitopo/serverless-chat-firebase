@@ -44,7 +44,7 @@ const sendFriendRequest = async (to, from) => {
       const emailToAdd = {
         to,
         message: {
-          subject: "Esto es una prueba!",
+          subject: `Solicitud de amistad de ${from}`,
           html: `
           <h4>Invitacion de registro a la plataforma</h4>
           <p>Esta es una invitacion a unirse al Serverless Chat!</p> <br>
