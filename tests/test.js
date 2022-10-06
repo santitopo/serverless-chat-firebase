@@ -102,7 +102,7 @@ describe("Conversations entry", () => {
     it("Can only read conversation if user is in it", async () => {
         const db = getFirestore(myAuth);
         
-        const testRef = db.collection("conversations").doc("conversation1");
+        const testRef = db.collection("conversations").doc("asdaweqw");
 
         await firebase.assertSucceeds(testRef.get());
     
@@ -111,7 +111,7 @@ describe("Conversations entry", () => {
       it("Can't read conversation if user is not in it", async () => {
         const db = getFirestore(myAuth);
         
-        const testRef = db.collection("conversations").doc("conversation2");
+        const testRef = db.collection("conversations").doc("asdkjahsdkjw9o");
 
         await firebase.assertFails(testRef.get());
     
