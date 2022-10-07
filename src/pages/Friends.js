@@ -18,7 +18,6 @@ import {
 import ChatView from "../components/ChatView";
 
 import { addDocToCollection } from "../firebase/utils/addDocToCollection";
-import { getDocFromFirestore } from "../firebase/utils/getDocFromFirestore";
 
 import { selectUser } from "../redux/auth";
 

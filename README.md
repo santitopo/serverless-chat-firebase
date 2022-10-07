@@ -1,29 +1,29 @@
 # Serverless Chat
 
-## Descirpción
+## Descripción
 
 El sistema cuenta con las siguientes funcionalidades implementadas:
 
 - Registro de usuario con mail, Google y Facebook.
 - Inicio de sesión con mail, Google y Facebook.
-- Enviar solicitud de amistad, tanto a usuarios registrados como no registrados. Estos ultimos reciben una invitacion por correo electronico a unirse a la aplicacion.
+- Enviar solicitud de amistad, tanto a usuarios registrados como no registrados. Estos ultimos reciben una invitación por correo electrónico a unirse a la aplicación.
 - Manejo de solicitudes de amistad. Los usuarios pueden rechazar y aceptar las solicitudes.
 - Conversaciones con amigos. Se listan los usuarios que son amigos del usuario loggeado, y cuando se selecciona uno, se muestra el chat entre ambos.
-- Ver ultimo mensaje en la lista de amigos.
+- Ver último mensaje en la lista de amigos.
 - Notificaciones dentro de la app al recibir mensajes.
 
 ## Estructura de carpetas y archivos
 
-- extensions y requests: carpetas que contienen las credenciales para hacer uso del envio de mails para invitaciones al sistema
+- extensions y requests: carpetas que contienen las credenciales para hacer uso del envío de mails para invitaciones al sistema
 - src: carpeta en la que se encuentra la mayor cantidad del contenido de la aplicación:
-  - pages: carpeta con las paginas de la aplicación
-  - components: carepta con los componentes de la aplicacion
-- tests: caperta contenedora de los test de la aplicacion
+  - pages: carpeta con las páginas de la aplicación
+  - components: carpeta con los componentes de la aplicación
+- tests: carperta contenedora de los test de la aplicación
 
 ## Ejecución del proyecto
 
-Primero navegar hacia la carpeta raiz del proyecto.
-Una vez en la raiz, se deben ejecutar los siguientes comandos para correr la aplicacion:
+Primero navegar hacia la carpeta raíz del proyecto.
+Una vez en la raíz, se deben ejecutar los siguientes comandos para correr la aplicación:
 
 1.  `npm ci`
 2.  `npm start`
@@ -40,6 +40,9 @@ En otra consola, en la carpeta tests:
 
 ## Link publico
 https://chat-serverless-89e6b.web.app
+
+## Servicios utilizados
+Se utilizó Trigger Email de firebase para mandar los correos electrónicos con invitaciones a usuarios no registrados.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
