@@ -4,13 +4,14 @@
 
 El sistema cuenta con las siguientes funcionalidades implementadas:
 
-- Registro de usuario con mail, Google y Facebook.
-- Inicio de sesión con mail, Google y Facebook.
-- Enviar solicitud de amistad, tanto a usuarios registrados como no registrados. Estos ultimos reciben una invitación por correo electrónico a unirse a la aplicación.
+- Registro de usuario con mail, Google y Facebook, utilizando Firebase Authentication. 
+- Inicio de sesión con mail, Google y Facebook, usando Firebase Authentication.
+- Enviar solicitud de amistad, tanto a usuarios registrados como no registrados. Estos últimos reciben una invitación por correo electrónico a unirse a la aplicación, usando Trigger Email.
 - Manejo de solicitudes de amistad. Los usuarios pueden rechazar y aceptar las solicitudes.
 - Conversaciones con amigos. Se listan los usuarios que son amigos del usuario loggeado, y cuando se selecciona uno, se muestra el chat entre ambos.
 - Ver último mensaje en la lista de amigos.
 - Notificaciones dentro de la app al recibir mensajes.
+- Seguridad: Se implementan Security rules para Firestore con la finalidad de evitar accesos indebidos a los datos
 
 ## Estructura de carpetas y archivos
 
@@ -30,19 +31,16 @@ Una vez en la raíz, se deben ejecutar los siguientes comandos para correr la ap
 
 ## Ejecución de pruebas
 
+Si se cuenta con Firebase Emulators en la raíz del proyecto ejecutar `firebase emulators:start`
+En otra consola, en la raíz del proyecto ejecutar:
+
 1. `cd tests`
-2. `firebase emulators:start`
+2. `npm ci`
+3. `npm run test`
 
-En otra consola, en la carpeta tests:
-
-1. `npm ci`
-2. `npm test`
-
-## Link publico
+## Link público
 https://chat-serverless-89e6b.web.app
 
-## Servicios utilizados
-Se utilizó Trigger Email de firebase para mandar los correos electrónicos con invitaciones a usuarios no registrados.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
