@@ -25,7 +25,7 @@ service cloud.firestore {
 
     match /conversations/{conversationId} {
       allow read, write: if isMyConversation();
-      allow create: if isLoggedUser();
+      allow create, update: if isLoggedUser();
     }
     
     match /conversations/{conversationId}/messages/{messageId} {
