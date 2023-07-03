@@ -1,5 +1,9 @@
 # Serverless Chat
 
+Project done using:
+- Firebase suite (Auth, Firestore with Security rules, Mail Extension, Messaging, Hosting, Emulator)
+- React for frontend
+
 ## Description
 
 - User registration with email, Google, and Facebook using Firebase Authentication.
