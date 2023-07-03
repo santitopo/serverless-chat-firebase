@@ -11,6 +11,15 @@
 - In-app notifications when receiving messages.
 - Security: Security rules are implemented for Firestore to prevent unauthorized access to data.
 
+## Screenshots
+
+<img width="700" alt="image" src="https://github.com/santitopo/serverless-chat-firebase/assets/43559181/f2c82386-36dc-48b0-9c5b-296a352b6d83">
+
+<img width="700" alt="image" src="https://github.com/santitopo/serverless-chat-firebase/assets/43559181/98a4e76c-4d3a-41d7-adc6-acd625ebc6d9">
+
+
+
+
 ## Project execution
 
 First, navigate to the root folder of the project.
